@@ -77,7 +77,7 @@ def plots(submission, output, sub):
         plt.savefig(os.path.join(output, f'{sub}_'+output_name+'.png'))
         plt.close()
 
-    plot_circular_bar_graph({'Correct': test['correct'].mean()}, 'Accuracy', 'FN_acc_learn')
+    plot_circular_bar_graph({'Correct': test['correct'].mean()}, 'Accuracy', 'FN_acc_test')
     #dot plot of reaction time for test with box and whiskers
     plt.figure(figsize=(5,5))
     sns.boxplot(y='response_time', data=test)
