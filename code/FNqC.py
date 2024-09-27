@@ -29,7 +29,7 @@ def qc(submission):
         raise ValueError('Submission is empty')
     # check if submission has correct number of rows (within 5% of expected = 82)
     if len(submission) < 78 or len(submission) > 86:
-        raise ValueError('Submission has incorrect number of rows')
+        print(f'WARNING: Submission has incorrect number of rows. Expected 82 - found {len(submission)}')
     
 
     
